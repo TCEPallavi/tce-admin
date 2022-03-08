@@ -1,0 +1,28 @@
+{
+  "root": "apps/tce-admin-e2e",
+  "sourceRoot": "apps/tce-admin-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/tce-admin-e2e/cypress.json",
+        "devServerTarget": "tce-admin:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "tce-admin:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/tce-admin-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["tce-admin"]
+}

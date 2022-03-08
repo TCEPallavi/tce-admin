@@ -1,0 +1,10 @@
+{
+  "cli": {
+    "analytics": false
+  },
+  "version": 2,
+  "projects": {
+    "tce-admin": "apps/tce-admin",
+    "tce-admin-e2e": "apps/tce-admin-e2e"
+  }
+}

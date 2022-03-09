@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/tce-admin",
         "index": "apps/tce-admin/src/index.html",
@@ -18,7 +20,9 @@
           "apps/tce-admin/src/favicon.ico",
           "apps/tce-admin/src/assets"
         ],
-        "styles": ["apps/tce-admin/src/styles.scss"],
+        "styles": [
+          "apps/tce-admin/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -83,7 +87,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/tce-admin"],
+      "outputs": [
+        "coverage/apps/tce-admin"
+      ],
       "options": {
         "jestConfig": "apps/tce-admin/jest.config.js",
         "passWithNoTests": true

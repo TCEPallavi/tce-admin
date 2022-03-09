@@ -1,9 +1,7 @@
 {
-  "cli": {
-    "analytics": false
-  },
   "version": 2,
   "projects": {
+    "core": "libs/core",
     "tce-admin": "apps/tce-admin",
     "tce-admin-e2e": "apps/tce-admin-e2e"
   }
